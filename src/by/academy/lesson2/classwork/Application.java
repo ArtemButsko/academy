@@ -6,13 +6,19 @@ public class Application {
 
         Cat cat1 = new Cat();
         Cat cat2 = new Cat("Vasya");
-        cat2.sleep();
         cat2.eat();
+        cat2.sleep();
+        cat2.walk();
 
-        //int age = Cat.grow();
-        int age2 = Cat.grow() + Cat.grow();
+        cat2.setInitials("m");
 
-        System.out.println(age2);
+
+        cat1.grow();
+        cat1.grow();
+        System.out.println(cat1.grow());
+        System.out.println(cat2.getInitials());
+
+
 
     }
 
